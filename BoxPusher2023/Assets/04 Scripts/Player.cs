@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
         {
             speed.isBoost = true;
             other.gameObject.SetActive(false);
+            GetComponent<TrailRenderer>().enabled = true;
         }
     }
 }

@@ -22,11 +22,13 @@ public class Teleporter : MonoBehaviour
     {
         if (currentPoint == pointA)
         {
+            Debug.Log("A");
             characterTransform.position = pointB.position;
             currentPoint = pointB;
         }
         else if (currentPoint == pointB)
         {
+            Debug.Log("B");
             characterTransform.position = pointA.position;
             currentPoint = pointA;
         }
